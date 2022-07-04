@@ -19,4 +19,7 @@ for (let index = 0; index < 5; index += 1) {
 
 
 // ---------------------------------------------------------------- REQUISITO 6
-
+window.onload = function() {
+  let blackColor = document.getElementById('black');
+  blackColor.className = 'color selected';
+}

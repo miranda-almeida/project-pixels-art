@@ -5,11 +5,12 @@
 
 #title {
   text-align: center;
-  font-family:'Courier New', Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
   color: lightcoral;
   margin: 40px;
 }
-/*------------------------------------------------------------------- REQUISITO 2*/
+
+/* ------------------------------------------------------------------- REQUISITO 2 */
 #color-palette {
   display: flex;
   justify-content: center;
@@ -17,8 +18,8 @@
 }
 
 #center-board {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #pixel-board {
@@ -27,7 +28,7 @@
   font-size: 0;
 }
 
-/*------------------------------------------------------------------- REQUISITO 5*/
+/* ------------------------------------------------------------------- REQUISITO 5 */
 .pixel {
   display: inline-block;
   width: 40px;
@@ -35,7 +36,7 @@
   border: solid black 1px;
 }
 
-/*------------------------------------------------------------------- REQUISITO 3*/
+/* ------------------------------------------------------------------- REQUISITO 3 */
 .color {
   border: 1px solid black;
   height: 40px;

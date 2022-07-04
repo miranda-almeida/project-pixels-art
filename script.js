@@ -14,7 +14,7 @@ for (let index = 0; index < 5; index += 1) {
   for (let index = 0; index < 5; index += 1) { 
     const pixel = document.createElement('div');
     pixel.className = 'pixel';
-    pixel.addEventListener('click', pixelPaint);
+    pixel.addEventListener('click', pixelPaint); // Adiciona linha para chamar função do requisito 8
     pixelRow.appendChild(pixel);
   }
 }
@@ -27,7 +27,7 @@ window.onload = function() {
 }
 
 // ---------------------------------------------------------------- REQUISITO 7
-let pixel = document.getElementsByClassName('pixels');
+let pixelSquare = document.getElementsByClassName('pixel');
 let colors = document.getElementsByClassName('color');
 
 // Acrescenta a classe 'selected' na cor clicada, para chamá-la no momento de colorir o pixel
@@ -48,7 +48,7 @@ for (let index = 0; index < colors.length; index += 1) {
 }
 
 // ---------------------------------------------------------------- REQUISITO 8
-// Define estilo de bg-color para cada elemento da lista de 'colors' individualmente para evitar a criação de uma função para cada cor separadamente. Dessa forma, é possível criar apenas uma função que vai passar pelo vetor de 'colors' aplicando o .style.backgroundColor de acordo com o index de cada elemento.
+// Define estilo de bg-color para cada elemento da lista de 'colors' individualmente para evitar a criação de uma função para cada cor separadamente. Dessa forma, é possível criar apenas uma função que vai passar pelo vetor de 'colors' aplicando o .style.backgroundColor de acordo com o index de cada elemento. 
 colors[0].style.backgroundColor = 'black';
 colors[1].style.backgroundColor = 'pink';
 colors[2].style.backgroundColor = 'red';
@@ -65,3 +65,12 @@ function pixelPaint(event) {
 }
 
 // ---------------------------------------------------------------- REQUISITO 9
+const clearBoardBtn = document.getElementById('clear-board');
+
+function clearBoard() {
+  for (let index = 0; index < pixelSquare.length; index += 1) {
+    pixelSquare[index].style.backgroundColor = 'white';
+  }
+}
+
+clearBoardBtn.addEventListener('click', clearBoard);

@@ -1,4 +1,8 @@
 /*------------------------------------------------------------------- REQUISITO 3 */
+.color {
+    border: 1px solid black;
+}
+
 #black {
     background-color: black;
 }

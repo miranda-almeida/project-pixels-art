@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#title {
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    color: lightcoral;
+    margin: 40px;
+}
+/*------------------------------------------------------------------- REQUISITO 2 */
+#color-palette {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/*------------------------------------------------------------------- REQUISITO 3 */
+.color {
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+}
+
+#black {
+    background-color: black;
+}
+
+#pink {
+    background-color: pink;
+}
+
+#red {
+    background-color: red;
+}
+
+#purple {
+    background-color: purple;
+}
